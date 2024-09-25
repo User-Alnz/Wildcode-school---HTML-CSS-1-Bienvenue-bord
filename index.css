@@ -1,11 +1,15 @@
-/* Define root Html */
 html, body
 {   
+    /*font*/
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    height: 100vh; /*Page is 100% height screen*/
     font-size: 1vw; /* Define font size at the root to use later rem and adapt all screen size easier */
     color: black;
     margin: 0;
 }
-
 
 /* Menu -- Start */
 .TopBarMenu 
@@ -89,15 +93,17 @@ li
     width: 20vw;
     background-color: #D9D9D9;
     border-radius: 5%;
+    padding-bottom: 1rem;
 }
 .articleImg
 {
     width: 20vw;
+    height: 25vh;
 }
-/*PageContent -- End*/
 
 .description
 {
+    margin-bottom: 3rem;
     max-width: 65ch;
 }
 
@@ -110,3 +116,20 @@ li
     font-size: 1rem;
     color: white;
 }
+/*PageContent -- End*/
+
+/*Footer -- Start*/
+footer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: gray;
+}
+
+.InfoFooter
+{
+    text-align: center;
+}
+
+/*Footer -- End*/
