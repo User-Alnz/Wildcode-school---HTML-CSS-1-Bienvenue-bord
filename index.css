@@ -10,7 +10,10 @@ html, body
     color: black;
     margin: 0;
 }
-
+.PageTopbar
+{
+    background-color: #A306B6;
+}
 /* Menu -- Start */
 .TopBarMenu 
 {
@@ -18,8 +21,8 @@ html, body
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 2rem;
     margin: 0;
+    padding: 3rem 0rem 3rem 2rem;
 }
 
 .TopBarMenuList
@@ -44,6 +47,7 @@ li
 {
     width: 20vw;
     border-radius: 50%;
+    background-color: white;
     border: solid white 0.5em;
 }
 /* Menu -- End */
@@ -133,3 +137,93 @@ footer
 }
 
 /*Footer -- End*/
+
+
+
+@media screen and (max-width : 992px)
+{
+/* Menu -- Start */
+    .TopBarMenu
+    {
+        align-items: center;
+        flex-direction: column;
+    }
+    #WildCodeSchool_logo
+    {
+        padding-top: 4rem;
+        width: 11vw;
+    }
+    .TopBarMenu 
+    {
+        font-size: 4rem;
+    }
+    .TopBarMenuList
+    {
+        padding-left: 0rem;
+    }
+/* Menu -- End */
+
+/* userInfo -- Start */
+    .userInfo
+    {
+        flex-direction: column-reverse;
+    }
+
+    #greeting
+    {
+        font-size: 7rem;
+    }
+
+    #UserAvatar
+    {
+        width: 30vw;
+    }
+/* userInfo -- End */
+
+
+    .TitlePageContent
+    {
+        font-size: 5rem;
+    }
+    .articlesWraper
+    {
+        flex-direction: column;
+        gap: 4.5rem;
+    }
+    .article
+    {
+        width: 75vw;
+    }
+    .articleImg 
+    {
+        width : 60vw;
+        height : inherit;
+    }
+    .titleArticle
+    {
+        font-size: 5rem;
+    }
+    .readButton
+    {
+        padding: 1rem 2.8rem 1rem 2.8rem;
+        font-size: 3rem;
+    }
+
+    .description
+    {
+        margin: 0rem 5rem 0rem 4rem;
+        max-width: inherit;
+        font-size: 4rem;
+    }
+
+    .description:last-child
+    {
+        padding-bottom: 10rem;
+    }
+
+    .InfoFooter
+    {
+        font-size: 3rem;
+    }
+   
+}
